@@ -2,12 +2,12 @@ package charakterGenerator;
 
 /**
  * @author C. Frantzen
- * @ Version 1.1
- * Änderungen: 31.01.2023
- * 		Hinzugefügte Methoden - nicht im UML umgesetzt
- * 			- setKlasseAendern(IBerufsklasse iBeruf)	<- Ändert die Klasse des Charakters
- * 			- setVolkAendern(IVolk iVolk)				<- Ändert das Volk des Charakters
- * 			- setCharName(String charName)				<- Ändert den Namen des Charakters
+ * @ Version 1.2
+ * Ã„nderungen: 31.01.2023
+ * 		HinzugefÃ¼gte Methoden - nicht im UML umgesetzt
+ * 			- setKlasseAendern(IBerufsklasse iBeruf)	<- Ã„ndert die Klasse des Charakters
+ * 			- setVolkAendern(IVolk iVolk)				<- Ã„ndert das Volk des Charakters
+ * 			- setCharName(String charName)				<- Ã„ndert den Namen des Charakters
  */
 public class CharGen {
 	
@@ -18,8 +18,8 @@ public class CharGen {
 	// ########################################################
 	
 	private String charName;				//Instanzvariable zur Benennung des Charakters
-	private IVolk iVolk = null;				// Erhalt der Methoden für Boni, Mali und Groesse
-	private IBerufsklasse iBeruf = null;	// Erhalt der Methoden für Klassenfertigkeit, 
+	private IVolk iVolk = null;				// Erhalt der Methoden fÃ¼r Boni, Mali und Groesse
+	private IBerufsklasse iBeruf = null;	// Erhalt der Methoden fÃ¼r Klassenfertigkeit, 
 											// 	 Talente, Fertigkeitspunkte und Lebenspunkte
 
 	
@@ -34,7 +34,7 @@ public class CharGen {
 	}
 	
 	// ########################################################
-	// Methoden für Werte-Rückgaben
+	// Methoden fÃ¼r Werte-RÃ¼ckgaben
 	// ########################################################
 	
 	// CharName ausgeben
@@ -47,22 +47,22 @@ public class CharGen {
 	// ########################################################
 	
 	// Klassenfertigkeiten
-	public String getBerufKlassenfertigkeit(){
+	public String getKlassenfertigkeit(){
 		return iBeruf.getKlassenfertigkeit();
 	}
 	
 	// Talente
-	public String getBerufTalente(){
+	public String getTalente(){
 		return iBeruf.getTalente();
 	}
 	
 	// Lebenspunkte
-	public String getBerufBasisLP(){
+	public String getBasisLebenspunkte(){
 		return iBeruf.getBasisLebenspunkte();
 	}
 	
 	// Fertigkeitspunkte
-	public String getBerufFP(){
+	public String getFertigkeitspunkte(){
 		return iBeruf.getFertigkeitspunkte();
 	}
 	
@@ -71,17 +71,17 @@ public class CharGen {
 	// ########################################################
 	
 	// Volksboni
-	public String getVolkBoni(){
+	public String getBoni(){
 		return iVolk.getBoni();
 	}
 	
 	// Volksmali
-	public String getVolkMali(){
+	public String getMali(){
 		return iVolk.getMali();
 	}
 	
-	// Volksgröße
-	public String getVolkGroesse(){
+	// VolksgrÃ¶ÃŸe
+	public String getGroesse(){
 		return iVolk.getGroesse();
 	}
 
