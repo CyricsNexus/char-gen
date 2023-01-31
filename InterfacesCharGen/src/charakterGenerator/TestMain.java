@@ -9,7 +9,7 @@ public class TestMain {
 		CharGen km = new CharGen("Horst",new VolkZwerg(), new BerufKaempfer());
 		charAugeben(km);
 		
-		// Name und Klasse sowie Volk ändern mittels Schnittstellenzugriff
+		// Name und Klasse sowie Volk Ã¤ndern mittels Schnittstellenzugriff
 		km.setCharName("Whes");
 		km.setKlasseAendern(new BerufZauberer());
 		km.setVolkAendern(new VolkMensch());
@@ -17,16 +17,16 @@ public class TestMain {
 		charAugeben(km);		
 	}
 
-//	Ausgabe der Charaktereigenschaften, indem Objekt Charakter übergeben wird	
+//	Ausgabe der Charaktereigenschaften, indem Objekt Charakter Ã¼bergeben wird	
 	private static void charAugeben(CharGen charakter) {
 		System.out.printf("Das hier ist der Charakter %s.%n"
-				+ "Er ist %s-groß."
+				+ "Er ist %s-groÃŸ."
 				+ "%n%n"
 				+ "Er hat folgende Talente:%n%s%n"
-				+ "Außerdem hat er die folgenden Fertigkeiten:%n%s%n",
+				+ "AuÃŸerdem hat er die folgenden Fertigkeiten:%n%s%n",
 				charakter.getCharName(),
-				charakter.getVolkGroesse(), 
-				charakter.getBerufTalente(),
-				charakter.getBerufKlassenfertigkeit());
+				charakter.getGroesse(), 
+				charakter.getTalente(),
+				charakter.getKlassenfertigkeit());
 	}
 }
