@@ -2,7 +2,7 @@
 	/**
 	 * Projekt: Charaktergenerator - Umgang mit Interfaces
 	 * 
-	 * Version: 1.0
+	 * Version: 1.1
 	 * Autor: C. Frantzen
 	 * Erstellt: 31.01.2023
 	 */
